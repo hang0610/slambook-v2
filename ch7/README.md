@@ -5,7 +5,7 @@
 #include <g2o/core/robust_kernel_impl.h>
 ```
 
-参考pose_estimation_3d2d.cpp，在pose_estimation_3d2d_re.cpp中首先定义了空间点的VertexPoint类(与ch9相同):
+参考pose_estimation_3d2d.cpp，在pose_estimation_3d2d_re.cpp中首先定义了另外一个节点类VertexPoint(特征点空间位置)(与ch9相同):
 ```python
 class VertexPoint : public g2o::BaseVertex<3, Vector3d> {
 public:
