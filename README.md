@@ -1,2 +1,2 @@
-# slambook2
-Personal notebook for slambook2-learnning.
+# 视觉slam十四讲-v2
+记录了一些个人笔记、代码与问题
