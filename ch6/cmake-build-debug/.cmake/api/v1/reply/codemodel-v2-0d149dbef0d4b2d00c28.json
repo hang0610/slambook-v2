@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Release-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "ch6",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ceresCurveFitting::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ceresCurveFitting-Release-fb5d0d1b7389e19f36f5.json",
+					"name" : "ceresCurveFitting",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "g2oCurveFitting::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-g2oCurveFitting-Release-f4e88848a45c46983d6c.json",
+					"name" : "g2oCurveFitting",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "gaussNewton::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gaussNewton-Release-c85cef07b4ee2cef400a.json",
+					"name" : "gaussNewton",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/zyh/slambook2/ch6/cmake-build-debug",
+		"source" : "/home/zyh/slambook2/ch6"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

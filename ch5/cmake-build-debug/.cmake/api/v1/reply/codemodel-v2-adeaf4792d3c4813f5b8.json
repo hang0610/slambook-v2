@@ -1,0 +1,149 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3
+					],
+					"jsonFile" : "directory-.-Release-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "imageBasics",
+					"jsonFile" : "directory-imageBasics-Release-7086f74beb80e3d31175.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "imageBasics",
+					"targetIndexes" : 
+					[
+						0,
+						3
+					]
+				},
+				{
+					"build" : "stereo",
+					"jsonFile" : "directory-stereo-Release-dc5500e77f0705134477.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "stereo",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "rgbd",
+					"jsonFile" : "directory-rgbd-Release-ebed223f64d2a254e797.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "rgbd",
+					"targetIndexes" : 
+					[
+						1
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						2,
+						3
+					],
+					"name" : "Project",
+					"targetIndexes" : 
+					[
+						1,
+						2
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "imageBasics",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "imageBasics::@4f8d3d626526017c1d86",
+					"jsonFile" : "target-imageBasics-Release-42aae8e60e59e547a15f.json",
+					"name" : "imageBasics",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "joinMap::@ac38c40c015272d0311c",
+					"jsonFile" : "target-joinMap-Release-dcafc54f58d7d902f2f6.json",
+					"name" : "joinMap",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "stereoVision::@72b9d9328efca1c4949f",
+					"jsonFile" : "target-stereoVision-Release-4d9ee15771033db95d37.json",
+					"name" : "stereoVision",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "undistortImage::@4f8d3d626526017c1d86",
+					"jsonFile" : "target-undistortImage-Release-d590ef0f925e908f9143.json",
+					"name" : "undistortImage",
+					"projectIndex" : 1
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/zyh/slambook2/ch5/cmake-build-debug",
+		"source" : "/home/zyh/slambook2/ch5"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

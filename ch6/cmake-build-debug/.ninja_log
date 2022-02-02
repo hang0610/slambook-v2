@@ -1,0 +1,7 @@
+# ninja log v5
+0	5084	1643439488208457298	CMakeFiles/gaussNewton.dir/gaussNewton.cpp.o	aff3467f97edd79a
+5085	5188	1643439488308457135	gaussNewton	eed09f0e2dae2958
+0	2126	1643440678710848885	CMakeFiles/ceresCurveFitting.dir/ceresCurveFitting.cpp.o	4f1ee3acc52859a6
+2126	2506	1643440679086848386	ceresCurveFitting	b22e55fe5e375fd9
+0	10064	1643440698050823207	CMakeFiles/g2oCurveFitting.dir/g2oCurveFitting.cpp.o	a792fc935089a630
+10064	10147	1643440698134823095	g2oCurveFitting	778ce015e32095f4

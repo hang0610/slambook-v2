@@ -1,0 +1,10 @@
+# ninja log v5
+0	3463	1643285550313626275	stereo/CMakeFiles/stereoVision.dir/stereoVision.cpp.o	db9fc5c3cc55df19
+3464	3902	1643285550749628312	stereo/stereoVision	f67500346787d46c
+2125	2523	1643285428189144342	imageBasics/undistortImage	58341b6bb39f74a5
+0	766	1643283853540062781	imageBasics/CMakeFiles/imageBasics.dir/imageBasics.cpp.o	d1cafbe52ffd3d53
+1	2124	1643285427797145478	imageBasics/CMakeFiles/undistortImage.dir/undistortImage.cpp.o	280752f692428574
+767	1267	1643283854040058629	imageBasics/imageBasics	3c88ed0bca976361
+2	6026	1643285847366560011	rgbd/CMakeFiles/joinMap.dir/joinMap.cpp.o	6ac727b477c28435
+3	6419	1643286457814805209	rgbd/CMakeFiles/joinMap.dir/joinMap.cpp.o	2335219ffb6dc73
+6419	6808	1643286458198804981	rgbd/joinMap	b2c14f0f4accca00

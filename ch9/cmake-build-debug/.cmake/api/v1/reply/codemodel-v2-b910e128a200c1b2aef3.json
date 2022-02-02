@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Release-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "bundle_adjustment",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "bal_common::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-bal_common-Release-d3fa88ea1768e9c0f999.json",
+					"name" : "bal_common",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "bundle_adjustment_ceres::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-bundle_adjustment_ceres-Release-0ff5754fbc2f4ceae134.json",
+					"name" : "bundle_adjustment_ceres",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "bundle_adjustment_g2o::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-bundle_adjustment_g2o-Release-0bb07e4a2992b9122c7a.json",
+					"name" : "bundle_adjustment_g2o",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/zyh/slambook2/ch9/cmake-build-debug",
+		"source" : "/home/zyh/slambook2/ch9"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}
