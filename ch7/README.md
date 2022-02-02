@@ -1,14 +1,12 @@
 ## g2o优化chi2过高的问题
 在ch7视觉里程计1的学习中，基于书上的3D-2D:PnP的BA优化相机位姿方法(g2o)，我尝试了用g2o同时优化相机位姿和特征空间点位置，我参照ch9的CMakeList.txt对编译内容做了修改，然后在pose_estimation_3d2d_re.cpp中include以下.h文件:
 ```python
-#!/usr/bin/env python3
 #include <g2o/core/base_binary_edge.h>
 #include <g2o/core/robust_kernel_impl.h>
 ```
 
 参考pose_estimation_3d2d.cpp，在pose_estimation_3d2d_re.cpp中首先定义了空间点的VertexPoint类(与ch9相同):
 ```python
-#!/usr/bin/env python3
 class VertexPoint : public g2o::BaseVertex<3, Vector3d> {
 public:
     EIGEN_MAKE_ALIGNED_OPERATOR_NEW;
@@ -31,7 +29,6 @@ public:
 
 随后，我重写了g2o的边为EdgeProjectionBoth类:
 ```python
-#!usr/bin/env python3
 class EdgeProjectionBoth :
         public g2o::BaseBinaryEdge<2, Eigen::Vector2d, VertexPose, VertexPoint> {
 public:
@@ -61,7 +58,6 @@ private:
 
 最后，修改了g2o的BA优化为函数bundleAdjustmentG2O_re(),修改部分如下:
 ```python
-#!usr/bin/env python3
 // vertexpose
 VertexPose *vertex_pose = new VertexPose(); // camera vertex_pose
 vertex_pose->setId(0);
