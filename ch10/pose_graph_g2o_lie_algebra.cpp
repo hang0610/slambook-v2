@@ -52,6 +52,7 @@ public:
             Quaterniond(data[6], data[3], data[4], data[5]),
             Vector3d(data[0], data[1], data[2])
         ));
+        return true;
     }
 
     virtual bool write(ostream &os) const override {

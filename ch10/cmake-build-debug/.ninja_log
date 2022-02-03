@@ -1,0 +1,7 @@
+# ninja log v5
+0	15412	1643883171010046443	CMakeFiles/pose_graph_g2o_SE3.dir/pose_graph_g2o_SE3.cpp.o	3fad3d43e8659b5b
+15413	15512	1643883171110046325	pose_graph_g2o_SE3	89251b4b00a957
+0	17612	1643883465809718787	CMakeFiles/pose_graph_g2o_lie.dir/pose_graph_g2o_lie_algebra.cpp.o	6073f1ca6c4c39c5
+17612	17694	1643883465889718703	pose_graph_g2o_lie	7a032520c1579a04
+4	20576	1643883640037538993	CMakeFiles/pose_graph_g2o_lie.dir/pose_graph_g2o_lie_algebra.cpp.o	6073f1ca6c4c39c5
+20576	20648	1643883640105538923	pose_graph_g2o_lie	7a032520c1579a04
