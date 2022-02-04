@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Release-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "loop_closure",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "feature_training::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-feature_training-Release-bfb676d18494fa786901.json",
+					"name" : "feature_training",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "gen_vocab::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gen_vocab-Release-0e16e2957b0e2a127853.json",
+					"name" : "gen_vocab",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "loop_closure::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-loop_closure-Release-ca9615c2e92883cdf2d8.json",
+					"name" : "loop_closure",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/zyh/slambook-v2/ch11/cmake-build-debug",
+		"source" : "/home/zyh/slambook-v2/ch11"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

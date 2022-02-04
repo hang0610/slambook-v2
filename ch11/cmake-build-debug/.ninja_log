@@ -1,0 +1,11 @@
+# ninja log v5
+0	1254	1643989831733808474	CMakeFiles/feature_training.dir/feature_training.cpp.o	e77ac874e87b6784
+1255	1321	1643989831797808262	feature_training	b9bfc8b4e0336114
+1	1591	1643990012737257741	CMakeFiles/loop_closure.dir/loop_closure.cpp.o	e0b0bf04d88d307b
+1592	1665	1643990012809257537	loop_closure	3e2f4c16fadabb91
+1	1333	1643990044149170161	CMakeFiles/loop_closure.dir/loop_closure.cpp.o	e0b0bf04d88d307b
+1334	1419	1643990044233169929	loop_closure	3e2f4c16fadabb91
+0	968	1643990223876704263	CMakeFiles/gen_vocab.dir/gen_vocab_large.cpp.o	a511f71d1f23c452
+968	1034	1643990223944704096	gen_vocab	3fa288f0f6d9baf9
+1	974	1643990285628555780	CMakeFiles/loop_closure.dir/loop_closure.cpp.o	e0b0bf04d88d307b
+974	1042	1643990285696555619	loop_closure	3e2f4c16fadabb91
