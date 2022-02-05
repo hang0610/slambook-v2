@@ -201,12 +201,20 @@ int main(int argc, char **argv) {
     for (int index = 1; index < color_image_files.size(); index++) {
         cout << "*** loop " << index << " ***" << endl;
         Mat curr = imread(color_image_files[index], 0);
-        if (curr.data == nullptr) continue;
+        cout << "0" << endl;
+        if (curr.data == nullptr) {
+            cout << "shit" << endl;
+            continue;
+        }
         SE3d pose_curr_TWC = poses_TWC[index];
         SE3d pose_T_C_R = pose_curr_TWC.inverse() * pose_ref_TWC;   // 坐标转换关系： T_C_W * T_W_R = T_C_R
+        cout << "1" << endl;
         update(ref, curr, pose_T_C_R, depth, depth_cov2);
+        cout << "2" << endl;
         evaludateDepth(ref_depth, depth);
+        cout << "3" << endl;
         plotDepth(ref_depth, depth);
+        cout << "4" << endl;
         imshow("image", curr);
         waitKey(1);
     }
@@ -258,34 +266,42 @@ bool readDatasetFiles(
 
 // 对整个深度图进行更新
 bool update(const Mat &ref, const Mat &curr, const SE3d &T_C_R, Mat &depth, Mat &depth_cov2) {
-    for (int x = boarder; x < width - boarder; x++)
-        for (int y = boarder; y < height - boarder; y++) {
+    cout << "update start" << endl;
+    for (int xx = boarder; xx < width - boarder; xx++) {
+        for (int yy = boarder; yy < height - boarder; yy++) {
             // 遍历每个像素
-            if (depth_cov2.ptr<double>(y)[x] < min_cov || depth_cov2.ptr<double>(y)[x] > max_cov) // 深度已收敛或发散
+            if (depth_cov2.ptr<double>(yy)[xx] < min_cov || depth_cov2.ptr<double>(yy)[xx] > max_cov) // 深度已收敛或发散
                 continue;
             // 在极线上搜索 (x,y) 的匹配
             Vector2d pt_curr;
             Vector2d epipolar_direction;
             bool ret = epipolarSearch(
-                ref,
-                curr,
-                T_C_R,
-                Vector2d(x, y),
-                depth.ptr<double>(y)[x],
-                sqrt(depth_cov2.ptr<double>(y)[x]),
-                pt_curr,
-                epipolar_direction
+                    ref,
+                    curr,
+                    T_C_R,
+                    Vector2d(xx, yy),
+                    depth.ptr<double>(yy)[xx],
+                    sqrt(depth_cov2.ptr<double>(yy)[xx]),
+                    pt_curr,
+                    epipolar_direction
             );
 
-            if (ret == false) // 匹配失败
+            if (!ret) // 匹配失败
+            {
+//                cout << "shit1" << endl;
                 continue;
+            }
 
             // 取消该注释以显示匹配
             // showEpipolarMatch(ref, curr, Vector2d(x, y), pt_curr);
 
             // 匹配成功，更新深度图
-            updateDepthFilter(Vector2d(x, y), pt_curr, T_C_R, epipolar_direction, depth, depth_cov2);
+            updateDepthFilter(Vector2d(xx, yy), pt_curr, T_C_R, epipolar_direction, depth, depth_cov2);
         }
+//        cout << xx << endl;
+    }
+    cout << "update end" << endl;
+    return true;
 }
 
 // 极线搜索
@@ -328,6 +344,7 @@ bool epipolarSearch(
             best_px_curr = px_curr;
         }
     }
+//    cout << "ncc: " << best_ncc << endl;
     if (best_ncc < 0.85f)      // 只相信 NCC 很高的匹配
         return false;
     pt_curr = best_px_curr;

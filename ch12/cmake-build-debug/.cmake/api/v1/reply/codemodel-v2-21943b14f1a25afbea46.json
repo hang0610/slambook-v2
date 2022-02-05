@@ -1,0 +1,133 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "dense_mono",
+					"jsonFile" : "directory-dense_mono-Debug-063c85c191bb6170e340.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "dense_mono",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "dense_RGBD",
+					"jsonFile" : "directory-dense_RGBD-Debug-603be9afcbbf0e2987db.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "dense_RGBD",
+					"targetIndexes" : 
+					[
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						2
+					],
+					"name" : "ch12",
+					"targetIndexes" : 
+					[
+						1,
+						2,
+						3
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "dense_monocular",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "dense_mapping::@0d9db25b8501a83ecc5c",
+					"jsonFile" : "target-dense_mapping-Debug-12ccbcf13a1f886009ae.json",
+					"name" : "dense_mapping",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "octomap_mapping::@d14e5bd20e26903fb1c4",
+					"jsonFile" : "target-octomap_mapping-Debug-0de009404206908fe2db.json",
+					"name" : "octomap_mapping",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "pointcloud_mapping::@d14e5bd20e26903fb1c4",
+					"jsonFile" : "target-pointcloud_mapping-Debug-2c987dd14d33722d929f.json",
+					"name" : "pointcloud_mapping",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "surfel_mapping::@d14e5bd20e26903fb1c4",
+					"jsonFile" : "target-surfel_mapping-Debug-e130e9eda46dea4033b9.json",
+					"name" : "surfel_mapping",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/zyh/slambook-v2/ch12/cmake-build-debug",
+		"source" : "/home/zyh/slambook-v2/ch12"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}
