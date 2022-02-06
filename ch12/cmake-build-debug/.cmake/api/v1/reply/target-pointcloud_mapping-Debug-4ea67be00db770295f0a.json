@@ -143,6 +143,9 @@
 			[
 				{
 					"fragment" : "-std=c++11 -O2  -g"
+				},
+				{
+					"fragment" : "-std=gnu++14"
 				}
 			],
 			"defines" : 
@@ -211,6 +214,14 @@
 				}
 			],
 			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "14"
+			},
 			"sourceIndexes" : 
 			[
 				0

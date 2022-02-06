@@ -155,7 +155,7 @@ build cmake_object_order_depends_target_pointcloud_mapping: phony || dense_RGBD/
 build dense_RGBD/CMakeFiles/pointcloud_mapping.dir/pointcloud_mapping.cpp.o: CXX_COMPILER__pointcloud_mapping_Release /home/zyh/slambook-v2/ch12/dense_RGBD/pointcloud_mapping.cpp || cmake_object_order_depends_target_pointcloud_mapping
   DEFINES = -DDISABLE_LIBUSB_1_0 -DDISABLE_PCAP -DDISABLE_PNG -Dqh_QHpointer -DvtkRenderingContext2D_AUTOINIT="1(vtkRenderingContextOpenGL2)" -DvtkRenderingCore_AUTOINIT="3(vtkInteractionStyle,vtkRenderingFreeType,vtkRenderingOpenGL2)"
   DEP_FILE = dense_RGBD/CMakeFiles/pointcloud_mapping.dir/pointcloud_mapping.cpp.o.d
-  FLAGS = -std=c++11 -O2  -O3 -DNDEBUG
+  FLAGS = -std=c++11 -O2  -O3 -DNDEBUG -std=gnu++14
   INCLUDES = -isystem /usr/local/include/opencv -isystem /usr/include/eigen3 -isystem /usr/include/vtk-7.1 -isystem /usr/include/freetype2 -isystem /usr/include/pcl-1.10 -isystem /usr/include/ni -isystem /usr/include/openni2
   OBJECT_DIR = dense_RGBD/CMakeFiles/pointcloud_mapping.dir
   OBJECT_FILE_DIR = dense_RGBD/CMakeFiles/pointcloud_mapping.dir
@@ -190,7 +190,7 @@ build cmake_object_order_depends_target_octomap_mapping: phony || dense_RGBD/CMa
 build dense_RGBD/CMakeFiles/octomap_mapping.dir/octomap_mapping.cpp.o: CXX_COMPILER__octomap_mapping_Release /home/zyh/slambook-v2/ch12/dense_RGBD/octomap_mapping.cpp || cmake_object_order_depends_target_octomap_mapping
   DEFINES = -DDISABLE_LIBUSB_1_0 -DDISABLE_PCAP -DDISABLE_PNG -Dqh_QHpointer -DvtkRenderingContext2D_AUTOINIT="1(vtkRenderingContextOpenGL2)" -DvtkRenderingCore_AUTOINIT="3(vtkInteractionStyle,vtkRenderingFreeType,vtkRenderingOpenGL2)"
   DEP_FILE = dense_RGBD/CMakeFiles/octomap_mapping.dir/octomap_mapping.cpp.o.d
-  FLAGS = -std=c++11 -O2  -O3 -DNDEBUG
+  FLAGS = -std=c++11 -O2  -O3 -DNDEBUG -std=gnu++14
   INCLUDES = -isystem /usr/local/include/opencv -isystem /usr/include/eigen3 -isystem /usr/include/vtk-7.1 -isystem /usr/include/freetype2 -isystem /usr/include/pcl-1.10 -isystem /usr/include/ni -isystem /usr/include/openni2
   OBJECT_DIR = dense_RGBD/CMakeFiles/octomap_mapping.dir
   OBJECT_FILE_DIR = dense_RGBD/CMakeFiles/octomap_mapping.dir
@@ -225,7 +225,7 @@ build cmake_object_order_depends_target_surfel_mapping: phony || dense_RGBD/CMak
 build dense_RGBD/CMakeFiles/surfel_mapping.dir/surfel_mapping.cpp.o: CXX_COMPILER__surfel_mapping_Release /home/zyh/slambook-v2/ch12/dense_RGBD/surfel_mapping.cpp || cmake_object_order_depends_target_surfel_mapping
   DEFINES = -DDISABLE_LIBUSB_1_0 -DDISABLE_PCAP -DDISABLE_PNG -Dqh_QHpointer -DvtkRenderingContext2D_AUTOINIT="1(vtkRenderingContextOpenGL2)" -DvtkRenderingCore_AUTOINIT="3(vtkInteractionStyle,vtkRenderingFreeType,vtkRenderingOpenGL2)"
   DEP_FILE = dense_RGBD/CMakeFiles/surfel_mapping.dir/surfel_mapping.cpp.o.d
-  FLAGS = -std=c++11 -O2  -O3 -DNDEBUG
+  FLAGS = -std=c++11 -O2  -O3 -DNDEBUG -std=gnu++14
   INCLUDES = -isystem /usr/local/include/opencv -isystem /usr/include/eigen3 -isystem /usr/include/vtk-7.1 -isystem /usr/include/freetype2 -isystem /usr/include/pcl-1.10 -isystem /usr/include/ni -isystem /usr/include/openni2
   OBJECT_DIR = dense_RGBD/CMakeFiles/surfel_mapping.dir
   OBJECT_FILE_DIR = dense_RGBD/CMakeFiles/surfel_mapping.dir

@@ -69,7 +69,6 @@ int main(int argc, char **argv) {
                 // 将世界坐标系的点放入点云
                 cloud.push_back(pointWorld[0], pointWorld[1], pointWorld[2]);
             }
-
         // 将点云存入八叉树地图，给定原点，这样可以计算投射线
         tree.insertPointCloud(cloud, octomap::point3d(T(0, 3), T(1, 3), T(2, 3)));
     }
