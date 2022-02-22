@@ -1,0 +1,114 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Release-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "vo1",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "orb_cv::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-orb_cv-Release-32f783d4ac2a58ba7780.json",
+					"name" : "orb_cv",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "orb_self::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-orb_self-Release-6c093b9f78b3c24f3e58.json",
+					"name" : "orb_self",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "pose_estimation_2d2d::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-pose_estimation_2d2d-Release-c79f0dbc2804fab2391a.json",
+					"name" : "pose_estimation_2d2d",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "pose_estimation_3d2d::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-pose_estimation_3d2d-Release-f6939d64cfb741700a35.json",
+					"name" : "pose_estimation_3d2d",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "pose_estimation_3d2d_re::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-pose_estimation_3d2d_re-Release-950b39ae9ca99c404551.json",
+					"name" : "pose_estimation_3d2d_re",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "pose_estimation_3d3d::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-pose_estimation_3d3d-Release-0f2f0e65b14f3e73d970.json",
+					"name" : "pose_estimation_3d3d",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "triangulation::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-triangulation-Release-c10e803b2eef96d235f5.json",
+					"name" : "triangulation",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/zyh/slambook-v2/ch7/cmake-build-debug",
+		"source" : "/home/zyh/slambook-v2/ch7"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

@@ -27,7 +27,7 @@ public:
 };
 ```
 
-随后，我重写了g2o的边为EdgeProjectionBoth类:
+随后，我重写了g2o的边为EdgeProjectionBoth类(参考建议后先除深度再乘内参矩阵):
 ```python
 class EdgeProjectionBoth :
         public g2o::BaseBinaryEdge<2, Eigen::Vector2d, VertexPose, VertexPoint> {
@@ -41,8 +41,13 @@ public:
         auto v0 = (VertexPose *) _vertices[0];
         auto v1 = (VertexPoint *) _vertices[1];
         Sophus::SE3d T = v0->estimate();
-        Eigen::Vector3d pos_pixel = _K * (T * v1->estimate());
-        pos_pixel /= pos_pixel[2];
+        Eigen::Vector3d pos = T * v1->estimate();
+        pos /= pos[2];
+        Eigen::Vector3d pos_pixel = _K * pos;
+//        cout << "pos_pixel is:\n" << pos_pixel << endl;
+//        Eigen::Vector3d pos_pixel = _K * (T * v1->estimate());
+//        pos_pixel /= pos_pixel[2];
+//        cout << "pos_pixel is:\n" << pos_pixel << endl;
         _error = _measurement - pos_pixel.head<2>();
     }
 
@@ -92,7 +97,7 @@ for (size_t i = 0; i < points_2d.size(); ++i) {
 }
 ```
 
-最后，在编译运行后的结果中，重写的g20优化在iteration=0的时候便停止了，在加了Huber的情况下chi2的值非常大，输出情况为:
+修改完了，在编译运行后的结果中，重写的g20优化在iteration=0的时候便停止了，在加了Huber的情况下chi2的值还是非常大，输出情况为:
 ```
 -- Max dist : 95.000000 
 -- Min dist : 7.000000 

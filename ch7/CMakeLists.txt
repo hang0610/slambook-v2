@@ -45,7 +45,7 @@ target_link_libraries(pose_estimation_3d2d
 
 add_executable(pose_estimation_3d2d_re pose_estimation_3d2d_re.cpp)
 target_link_libraries(pose_estimation_3d2d_re
-        ${OpenCV_LIBS} ${G2O_LIBS} fmt::fmt)
+        ${OpenCV_LIBS} ${G2O_LIBS} ${EIGEN3_LIBS} fmt::fmt)
 
 add_executable(pose_estimation_3d3d pose_estimation_3d3d.cpp)
 target_link_libraries(pose_estimation_3d3d

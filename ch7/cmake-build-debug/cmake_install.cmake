@@ -1,4 +1,4 @@
-# Install script for directory: /home/zyh/slambook2/ch7
+# Install script for directory: /home/zyh/slambook-v2/ch7
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/zyh/slambook2/ch7/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/zyh/slambook-v2/ch7/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
