@@ -1,12 +1,14 @@
 ## 公式错误P183
 原式(7.34)：
-$$\ (1-u)y^2 - ux^2 - \cos \< b, c \> y + 2uxy\cos \< a,b \> + 1=0 $$
+$$\ (1-u)y^2 - ux^2 - \cos \< b, c \> y + 2uxy\cos \< a,b \> + 1=0 \$$
 
-$$\ (1-w)x^2 - wy^2 - \cos \< a, c \> x + 2wxy\cos \< a,b \> + 1=0 $$
+$$\ (1-w)x^2 - wy^2 - \cos \< a, c \> x + 2wxy\cos \< a,b \> + 1=0 \$$
+
+
 或许该改为：
-$$\ (1-u)y^2 - ux^2 - 2\cos \< b, c \> y + 2uxy\cos \< a,b \> + 1=0 $$
+$$\ (1-u)y^2 - ux^2 - 2\cos \< b, c \> y + 2uxy\cos \< a,b \> + 1=0 \$$
 
-$$\ (1-w)x^2 - wy^2 - 2\cos \< a, c \> x + 2wxy\cos \<a,b \> + 1=0 $$
+$$\ (1-w)x^2 - wy^2 - 2\cos \< a, c \> x + 2wxy\cos \<a,b \> + 1=0 \$$
 
 ## g2o优化chi2过高的问题
 在ch7视觉里程计1的学习中，基于书上的3D-2D:PnP的BA优化相机位姿方法(g2o)，我尝试了用g2o同时优化相机位姿和特征空间点位置，我参照ch9的CMakeList.txt对编译内容做了修改，然后在pose_estimation_3d2d_re.cpp中include以下.h文件:
