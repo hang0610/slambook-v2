@@ -1,7 +1,7 @@
 ## 公式错误P183
 原式(7.34)：
-$$ (1-u)y^2 - ux^2 - \cos<b, c>y + 2uxy\cos<a,b> + 1=0 $$
-$$ (1-w)x^2 - wy^2 - \cos<a, c>x + 2wxy\cos<a,b> + 1=0 $$
+$ (1-u)y^2 - ux^2 - \cos<b, c>y + 2uxy\cos<a,b> + 1=0 $
+$ (1-w)x^2 - wy^2 - \cos<a, c>x + 2wxy\cos<a,b> + 1=0 $
 或许该改为：
 $$ (1-u)y^2 - ux^2 - 2\cos<b, c>y + 2uxy\cos<a,b> + 1=0 $$
 $$ (1-w)x^2 - wy^2 - 2\cos<a, c>x + 2wxy\cos<a,b> + 1=0 $$
