@@ -56,10 +56,6 @@ public:
         Eigen::Vector3d pos = T * v1->estimate();
         pos /= pos[2];
         Eigen::Vector3d pos_pixel = _K * pos;
-//        cout << "pos_pixel is:\n" << pos_pixel << endl;
-//        Eigen::Vector3d pos_pixel = _K * (T * v1->estimate());
-//        pos_pixel /= pos_pixel[2];
-//        cout << "pos_pixel is:\n" << pos_pixel << endl;
         _error = _measurement - pos_pixel.head<2>();
     }
 
